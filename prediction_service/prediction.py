@@ -42,7 +42,7 @@ def predict(data):
 
 def get_schema(schema_path=schema_path):
     with open(schema_path) as json_file:
-        schema = json.safe_load(json_file)
+        schema = json.load(json_file)
     return schema
 
 def validate_input(dict_request):
